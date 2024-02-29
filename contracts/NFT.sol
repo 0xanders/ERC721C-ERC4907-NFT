@@ -19,7 +19,7 @@ contract NFT is ERC721C, Ownable, IERC4907 {
     string public baseUrl;
     address public minter;
 
-    constructor() ERC721OpenZeppelin("NFT", "NFT") {}
+    constructor() ERC721OpenZeppelin("Aethir Checker License", "ATHCL") {}
 
     function _requireCallerIsContractOwner() internal view virtual override {
         require(owner() == _msgSender(), "Ownable: caller is not the owner");
